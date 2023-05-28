@@ -2,7 +2,7 @@
 set(LIB_NAME "viface")
 
 # Add libviface library to build
-add_library(${LIB_NAME} SHARED viface.cpp)
+add_library(${LIB_NAME} STATIC viface.cpp)
 
 # Set library version
 set_target_properties(
