@@ -119,6 +119,11 @@ class VIfaceImpl
             return this->queues.rx;
         }
 
+        int getEpollFD() const
+        {
+            return m_epoll_fd;
+        }
+
         void setMAC(string mac);
 
         string getMAC() const;
